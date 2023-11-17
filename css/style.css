@@ -55,6 +55,7 @@ header section{
     background-color: #e6bd43;
     text-align: center;
     size: 2rem;
+    padding: 2rem;
 }
 
 #index-section-3{
@@ -76,6 +77,31 @@ header section{
 #Portifolio {
     text-align: center;
     background-image: url("https://www.pexels.com/photo/black-and-white-browsing-business-coffee-265152/");
+}
+
+#products-section-1 img, #products-section-2 img, #products-section-3 img{
+    max-width: 350px;
+    min-width: 200px;
+}
+
+
+#products-section-1, #products-section-2, #products-section-3{
+    max-width: 350px;
+    min-width: 200px;
+    background-color: aqua;
+
+}
+
+#products-section-1{
+    
+}
+
+#products-section-2{
+ 
+}
+
+#products-section-3{
+   
 }
 
 /*about*/
