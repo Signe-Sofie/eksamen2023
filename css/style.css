@@ -5,6 +5,7 @@
 
 /*header*/
 
+
 nav ul li a{
     text-decoration: none;
     color: black;
@@ -33,19 +34,34 @@ header nav{
 
 /*index*/
 
-.read-more-get-touch-button{
+.read-more-about-our-services{
     color: black;
     background-color: #e6bd43;
     display: inline-block;
     text-decoration: none;
     padding: 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
 }
 
 header section{
-    background-color: blue;
-    text-align: center;
+    background-image: url("");
+    
     padding: 2rem;
 }
+
+header section h2{
+    font-size: xx-large;
+    text-align: center;
+}
+
+header section p{
+    background-image: url("img/medium-bilde-jpg");
+    text-align: center;
+}
+
+
 
 #index-section-1{
     text-align: center;
@@ -63,7 +79,7 @@ header section{
     
 }
 #index-section-2 a{
-   border-width: 2px;
+   border-width: 3px;
    border-style: solid;
    padding: 1rem;
    color: black;
@@ -83,8 +99,15 @@ header section{
     padding: 2rem;
 }
 
+#sign-me-up{
+    background-color: #e6bd43;
+    color: black;
+
+}
+
 #index-section-4 input{
-    background-color: black;
+    height: 2rem;
+    
 }
 /*products*/
 
