@@ -6,3 +6,13 @@
     text-decoration: none;
    
 }
+
+.background-container {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url(""); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    position: relative;
+}

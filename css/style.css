@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1600px;
 }
 
 /*header*/
@@ -13,6 +14,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-decoration: underline;
+    text-decoration-color: #e6bd43;
 }
 
 nav ul li {
@@ -25,7 +27,6 @@ nav ul li {
     background-color: #e6bd43;
     display: inline;
     padding: 1rem;
-    
 }
 
 header nav{
@@ -75,7 +76,9 @@ header section p{
 }
 
 #index-section-2 img{
+    max-width: 400px;
     width: 100%;
+    flex-direction: column;
     
 }
 #index-section-2 a{
@@ -109,22 +112,21 @@ header section p{
     height: 2rem;
     
 }
+
 /*products*/
 
 
 #Portifolio {
     text-align: center;
-    background-image: url("https://www.pexels.com/photo/black-and-white-browsing-business-coffee-265152/");
-}
-
-#products-section-button{
-    background-
-    text-decoration: none;
+    background-image: url("");
 }
 
 #products-section-button ul li{
-    text-decoration: none;
     list-style: none;
+}
+
+#products-section-button ul li a{
+    text-decoration: none;
 }
 
 #products-section-branding img, #products-section-design img, #products-section-development img{
@@ -200,4 +202,46 @@ footer {
     text-decoration: none;
 }
 
+.background-container {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url(""); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    position: relative;
+}
 
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#Compeling-headline{
+    position: relative;
+    height: auto;
+    width: auto;
+   
+}
+
+#Compeling-headline::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("img/medium-bilde-jpgS");
+    background-size: cover;
+    opacity: 0.5;
+
+}
+
+#content{
+    position:relative;
+    text-align: center;
+
+}
