@@ -14,7 +14,6 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-decoration: underline;
-    
     text-decoration-thickness: 4px;
     text-decoration-color: #e6bd43;
 }
@@ -24,6 +23,11 @@ nav ul li {
     color: black;
     font-weight: bold;
     margin: 1rem;
+    
+}
+
+nav ul{
+    padding: unset;
 }
 #nav-contact{
     background-color: #e6bd43;
@@ -97,6 +101,10 @@ header section p{
     text-align: center;
 }
 
+.services-ikon{
+   font-size: x-large;
+}
+
 #index-section-4{
     background-color: rgb(228, 228, 228);
     text-align: center;
@@ -122,12 +130,17 @@ header section p{
     background-image: url("");
 }
 
-#products-section-button ul li{
-    list-style: none;
-}
 
-#products-section-button ul li a{
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255); /* Your desired button color */
+    color: #000000; /* Text color */
     text-decoration: none;
+    font-size: 15px;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #products-section-branding img, #products-section-design img, #products-section-development img{
@@ -139,7 +152,7 @@ header section p{
 #products-section-branding, #products-section-design, #products-section-development{
     max-width: 350px;
     min-width: 200px;
-    background-color: aqua;
+    
 
 }
 
@@ -153,6 +166,10 @@ header section p{
 
 #products-section-3{
    
+}
+
+#explore-jobs{
+   border-bottom: 3px solid #e6bd43;
 }
 
 /*about*/
@@ -172,6 +189,12 @@ iframe{
 #about-section-3{
     background-color: #e6bd43;
     text-align: center;
+    padding: 1rem;
+}
+
+#about-section-3 img{
+    margin: 0.5rem;
+    
 }
 
 #user-contact{
@@ -182,6 +205,18 @@ iframe{
 #contact-information{
     background-color: rgb(216, 216, 216);
     padding: 2rem;
+}
+
+.location{
+    display: block ruby;
+}
+
+#get-in-touch{
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 /*footer*/
@@ -202,6 +237,11 @@ footer {
     margin: 1rem;
     text-decoration: none;
 }
+
+
+
+
+
 
 .background-container {
     width: 100vw; /* 100% of the viewport width */

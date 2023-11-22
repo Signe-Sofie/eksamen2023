@@ -16,3 +16,8 @@
     background-repeat: no-repeat; /* Do not repeat the background image */
     position: relative;
 }
+
+text-decoration: underline;
+text-decoration-thickness: 4px;
+text-decoration-color:#e6bd43 ;
+}
