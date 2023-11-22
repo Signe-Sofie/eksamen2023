@@ -14,6 +14,8 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-decoration: underline;
+    
+    text-decoration-thickness: 4px;
     text-decoration-color: #e6bd43;
 }
 
@@ -48,7 +50,6 @@ header nav{
 
 header section{
     background-image: url("");
-    
     padding: 2rem;
 }
 
@@ -58,7 +59,7 @@ header section h2{
 }
 
 header section p{
-    background-image: url("img/medium-bilde-jpg");
+    background-image: url("");
     text-align: center;
 }
 
@@ -205,7 +206,7 @@ footer {
 .background-container {
     width: 100vw; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
-    background-image: url(""); /* Replace with the path to your image */
+    background-image: url("img/medium-bilde.jpg"); /* Replace with the path to your image */
     background-size: cover; /* Cover the entire container with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -234,7 +235,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("img/medium-bilde-jpgS");
+    background-image: url("");
     background-size: cover;
     opacity: 0.5;
 
