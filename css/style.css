@@ -41,6 +41,10 @@ header nav{
 
 /*index*/
 
+#Compeling-headline{
+    background-color: rgb(179, 193, 207);
+}
+
 .read-more-about-our-services{
     color: black;
     background-color: #e6bd43;
@@ -202,6 +206,7 @@ iframe{
 
 #about-section-1{
     margin: 2rem;
+    background-color: rgb(221, 218, 218);
 }
 #about-section-1 p{
     padding-bottom: 15px;
@@ -290,11 +295,12 @@ footer {
 .background-container {
     width: 100vw; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
-    background-image: url("img/medium-bilde.jpg"); /* Replace with the path to your image */
+    background-image: url(""); /* Replace with the path to your image */
     background-size: cover; /* Cover the entire container with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
     position: relative;
+    background-color: lightgray;
 }
 
 .content {
@@ -328,5 +334,91 @@ footer {
 #content{
     position:relative;
     text-align: center;
+
+}
+
+
+
+
+
+/*media queries*/
+@media only screen and (min-width: 600px){
+
+    #grid-container-index, #grid-container-about, #grid-container-products{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+    }
+
+    #grid-container-index main{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    #grid-container-products main{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    #grid-container-about main{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #about-main{
+        display: grid;
+        grid-template-areas:". about-company" "our-services our-services" "clients clients" "tekst-info skjema" "map map";
+        grid-area: main;
+    }
+
+    #contact-information{
+        grid-area: skjema;
+    }
+
+    #user-contact{
+        grid-area: tekst-info;
+    }
+
+    #about-section-3{
+        grid-area: clients;
+    }
+
+    #about-section-1{
+        grid-area: about-company;
+    }
+
+    #about-section-2{
+        grid-area: our-services;
+        display: flex;
+    }
+
+    #map{
+        grid-area: map;
+    }
+
+
+
+
+
+
+
+
+    #footer{
+        display: grid;
+        grid-template-areas: "left center right";
+        grid-area: footer;
+    }
+
+    #logo-footer{
+        grid-area: left;
+    }
+
+    #name-footer{
+        grid-area: center;
+    }
+
+    #ikon-footer{
+        grid-area: right;
+    }
+
+
 
 }
