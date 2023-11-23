@@ -344,6 +344,8 @@ footer {
 /*media queries*/
 @media only screen and (min-width: 600px){
 
+/*generelt*/
+
     #grid-container-index, #grid-container-about, #grid-container-products{
         grid-template-areas: "header header header" "main main main" "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -363,6 +365,40 @@ footer {
         grid-column-end: 5;
     }
 
+/*index*/
+    #index-main{
+        display: grid;
+        grid-template-areas: "subheading subheading" "bilde company-tekst" "our-services our-services" "newsletter newsletter";
+        grid-area: main;
+    }
+
+    
+
+    #index-section-1{
+        grid-area: subheading;
+    }
+
+    #index-section-2-img{
+        grid-area: bilde;
+    }
+
+    #index-section-2-tekst{
+        grid-area: company-tekst;
+    }
+   
+
+    #index-section-3{
+        grid-area: our-services;
+    }
+
+    #index-section-4{
+        grid-area: newsletter;
+    }
+
+
+/*products*/
+
+/*about*/
     #about-main{
         display: grid;
         grid-template-areas:". about-company" "our-services our-services" "clients clients" "tekst-info skjema" "map map";
@@ -400,7 +436,7 @@ footer {
 
 
 
-
+/*footer*/
     #footer{
         display: grid;
         grid-template-areas: "left center right";
