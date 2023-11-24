@@ -175,24 +175,15 @@ header div p{
 
 
 #products-section-branding, #products-section-design, #products-section-development{
-    max-width: 350px;
-    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     font-weight: bold ;
 }
 
-#products-section-1{
-    
-}
 
-#products-section-2{
- 
-}
 
-#products-section-3{
-   
-}
-
-#explore-jobs{
+.explore-jobs{
    border-bottom: 3px solid #e6bd43;
    padding-bottom: 15px;
 }
@@ -294,13 +285,14 @@ footer {
 
 .background-container {
     width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
+    height: 350px; /* 100% of the viewport height */
     background-image: url(""); /* Replace with the path to your image */
     background-size: cover; /* Cover the entire container with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
     position: relative;
     background-color: lightgray;
+    width: 100%;
 }
 
 .content {
@@ -366,6 +358,24 @@ footer {
     }
 
 /*index*/
+    #index-header{
+        display: grid;
+        grid-template-areas: "logo . meny" "headline headline headline";
+        grid-area: header;
+    }
+
+    #logo{
+        grid-area: logo;
+    }
+
+    #meny{
+        grid-area: meny;
+    }
+
+    #Compeling-headline{
+        grid-area: headline;
+    }
+
     #index-main{
         display: grid;
         grid-template-areas: "subheading subheading" "bilde company-tekst" "our-services our-services" "newsletter newsletter";
@@ -401,16 +411,24 @@ footer {
 /*about*/
     #about-main{
         display: grid;
-        grid-template-areas:". about-company" "our-services our-services" "clients clients" "tekst-info skjema" "map map";
+        grid-template-areas:"about-company about-company" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
         grid-area: main;
     }
 
     #contact-information{
-        grid-area: skjema;
+        grid-area: tekst-info;
+    }
+
+    #contact-us{
+        grid-area: contact;
+        text-align: center;
+        background-color: lightgrey;
+        margin-bottom: 0;
+        padding-top: 3rem;
     }
 
     #user-contact{
-        grid-area: tekst-info;
+        grid-area: skjema;
     }
 
     #about-section-3{
@@ -453,8 +471,7 @@ footer {
 
     #ikon-footer{
         grid-area: right;
+        
     }
-
-
 
 }
