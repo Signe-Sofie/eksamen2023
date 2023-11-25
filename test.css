@@ -33,3 +33,8 @@ display: flex;
   grid-template-areas: "subheading subheading" "bilde company-tekst" "our-services our-services" "newsletter newsletter";
   grid-area: main;
 }
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+font-weight: bold ;

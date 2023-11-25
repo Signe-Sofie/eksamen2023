@@ -60,15 +60,9 @@ header div{
     background-image: url("");
     padding: 2rem;
 }
-
-header div h2{
-    font-size: xx-large;
-    text-align: center;
-}
-
-header div p{
-    background-image: url("");
-    text-align: center;
+#content h1{
+    font-size: xxx-large;
+    font-weight: bolder;
 }
 
 #index-section-1{
@@ -133,6 +127,7 @@ header div p{
     background-color: rgb(228, 228, 228);
     text-align: center;
     padding: 2rem;
+    font-size: larger;
 }
 
 #sign-me-up{
@@ -175,10 +170,7 @@ header div p{
 
 
 #products-section-branding, #products-section-design, #products-section-development{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-weight: bold ;
+   
 }
 
 
@@ -447,12 +439,18 @@ footer {
         margin-top: 2rem;
     }
    
-    #our-services-overskrift{
+    #our-services-overskrift-index{
         text-align: center;
+        font-size: x-large;
+        margin-top: 5rem;
     }
     #index-section-3{
         grid-area: our-services;
         display: flex;
+        flex-wrap: wrap;
+        margin: 3rem;
+        gap: 4rem;
+        justify-content: center;
     }
 
     #index-section-4{
@@ -461,11 +459,16 @@ footer {
 
 
 /*products*/
+#products-section-branding, #products-section-design, #products-section-development{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 /*about*/
     #about-main{
         display: grid;
-        grid-template-areas:"about-company about-company" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
+        grid-template-areas:"about-company about-company" "overskrift overskrift" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
         grid-area: main;
     }
 
@@ -493,9 +496,19 @@ footer {
         grid-area: about-company;
     }
 
+    #our-services-overskrift-about{
+        grid-area: overskrift;
+        text-align: center;
+        font-size: x-large;
+    }
+
     #about-section-2{
         grid-area: our-services;
         display: flex;
+        flex-wrap: wrap;
+        margin: 3rem;
+        gap: 4rem;
+        justify-content: center;
     }
 
     #map{
