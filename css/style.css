@@ -76,6 +76,9 @@ header div p{
     padding: 2rem;
     margin: 1rem;
 }
+#index-section-1 h3{
+    font-size: large;
+}
 
 
 #index-section-2{
@@ -101,13 +104,16 @@ header div p{
 
 #index-section-3{
     text-align: center;
-    padding: 2rem;
     
+    margin-top: 2rem;
 }
 
-#index-section-3 h3{
-    padding: 2rem;
+#our-services-overskrift{
+    padding-top: 2rem;
+    padding-bottom: 0;
     font-size: large;
+    text-align: center;
+    font-weight: bolder;
 }
 
 #index-section-3 h5{
@@ -118,12 +124,6 @@ header div p{
 #index-section-3 p{
     margin-bottom: 3rem;
 }
-
-
-#index-section-3 article{
-    
-}
-
 
 .services-ikon{
    font-size: x-large;
@@ -389,49 +389,70 @@ footer {
         grid-column-start: 1;
         grid-column-end: 5;
     }
+/*header*/
+    #header-logo{
+        display: flex;
+        margin: auto 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    #header-meny{
+        display: flex;
+        margin: auto 15px;
+        align-items: center;
+        justify-content: end;   
+    }
 /*index*/
-    #index-header{
-        display: grid;
-        grid-template-areas: "logo . meny" "headline headline headline";
-        grid-area: header;
-    }
-
-    #logo{
-        grid-area: logo;
-    }
-
-    #meny{
-        grid-area: meny;
-    }
+   
 
     #Compeling-headline{
         grid-area: headline;
     }
 
-    #index-main{
-        display: grid;
-        grid-template-areas: "subheading subheading" "bilde company-tekst" "our-services our-services" "newsletter newsletter";
-        grid-area: main;
+    #Compeling-headline p{
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
-
-    
+    .read-more-about-our-services br{
+        display: none;
+    }
+    .read-more-about-our-services{
+        width:fit-content;
+    }
 
     #index-section-1{
         grid-area: subheading;
     }
+    #index-section-1 br{
+        display: none;
+    }
+    #index-section-1 p{
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-top: 1.5rem;
+    }
 
+    #index-section-2{
+        display: -webkit-box;
+    }
     #index-section-2-img{
         grid-area: bilde;
+        margin-right: 2rem;
     }
 
     #index-section-2-tekst{
         grid-area: company-tekst;
+        width: 50%;
+        margin-top: 2rem;
     }
    
-
+    #our-services-overskrift{
+        text-align: center;
+    }
     #index-section-3{
         grid-area: our-services;
+        display: flex;
     }
 
     #index-section-4{

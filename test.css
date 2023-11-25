@@ -21,3 +21,15 @@ text-decoration: underline;
 text-decoration-thickness: 4px;
 text-decoration-color:#e6bd43 ;
 }
+
+display: flex;
+    margin: auto 15px;
+    align-items: center;
+    justify-content: end;
+  }
+
+  #index-main
+  display: grid;
+  grid-template-areas: "subheading subheading" "bilde company-tekst" "our-services our-services" "newsletter newsletter";
+  grid-area: main;
+}
