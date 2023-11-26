@@ -38,3 +38,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 font-weight: bold ;
+
+#products-section-branding img{
+    max-width: none;
+}

@@ -459,13 +459,37 @@ footer {
 
 
 /*products*/
-#products-section-branding, #products-section-design, #products-section-development{
+
+
+#products-section-branding{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
+#products-section-branding img{
+    max-width: none;
+}
+#products-section-design{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#products-section-design img{
+    max-width: none;
+}
+#products-section-development{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#products-section-development img{
+    max-width: none;
+}
+
 
 /*about*/
+
+
     #about-main{
         display: grid;
         grid-template-areas:"about-company about-company" "overskrift overskrift" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
