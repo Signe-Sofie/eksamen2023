@@ -5,14 +5,7 @@
     max-width: 1600px;
 }
 
-.hover-knapp:hover{
-    background-color: #252525;
-    color: #e6bd43;
-}   
 
-.hover-knapp:hover a{
-    color: #e6bd43;
-}
 
 /*header*/
 
@@ -26,6 +19,9 @@ nav ul li a{
 nav ul li {
     list-style: none;
     margin: 1rem;
+}
+#about-li{
+    padding-bottom: 1rem;
 }
 .side-meny-punkt{
     text-decoration: underline;
@@ -55,6 +51,20 @@ header nav{
 }
 
 /*index*/
+
+.hover-knapp:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}   
+
+.hover-knapp:hover a{
+    color: #e6bd43;
+}
+
+#button:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
 
 #Compeling-headline{
     background-color: rgb(179, 193, 207);
@@ -154,6 +164,10 @@ header div{
     background-color: #e6bd43;
     color: black;
 }
+#sign-me-up:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
 
 #index-section-4 input{
     height: 2.5rem;
@@ -186,15 +200,27 @@ header div{
     border-style: solid;
     margin: 0.4rem;
 }
+.button-link:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
 
 #products-section-branding img, #products-section-design img, #products-section-development img{
     max-width: 300px;
     min-width: 200px;
 }
 
-
-#products-section-branding, #products-section-design, #products-section-development{
-   
+.branding-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
+}
+.design-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
+}
+.development-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
 }
 
 
@@ -215,6 +241,7 @@ iframe{
 #about-section-1{
     margin: 2rem;
     background-color: rgb(221, 218, 218);
+    padding: 2rem;
 }
 #about-section-1 p{
     padding-bottom: 15px;
@@ -275,9 +302,12 @@ iframe{
     padding: 1rem;
     background-color: #e6bd43;
     font-weight: bold;
-  
     text-decoration: none;
     color: #000;
+}
+#send-message:hover{
+    background-color: #252525;
+    color: #e6bd43;
 }
 #user-contact textarea{
     height: 140px;
@@ -313,6 +343,11 @@ iframe{
     padding: 1rem;
     font-weight: bold;
     text-align: center;
+    display: inline-block;
+}
+#get-in-touch:hover{
+    background-color: #252525;
+    color: #e6bd43;
 }
 
 /*footer*/
@@ -425,6 +460,9 @@ footer {
         margin: auto 15px;
         align-items: center;
         justify-content: end;   
+    }
+    #about-li{
+        padding-bottom: 0;
     }
 /*index*/
    
