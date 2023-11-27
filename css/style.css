@@ -5,6 +5,15 @@
     max-width: 1600px;
 }
 
+.hover-knapp:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}   
+
+.hover-knapp:hover a{
+    color: #e6bd43;
+}
+
 /*header*/
 
 
@@ -61,6 +70,11 @@ header nav{
     text-align: left;
     width: 100%;
 }
+.read-more-about-our-services:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
+
 
 header div{
     background-image: url("");
@@ -142,7 +156,11 @@ header div{
 }
 
 #index-section-4 input{
-    height: 2rem;
+    height: 2.5rem;
+    border: none;
+    margin: -0.1rem;
+    padding: 13px;
+    font-weight: bold;
 }
 
 /*products*/
@@ -245,22 +263,27 @@ iframe{
 #user-contact{
     background-color: rgb(216, 216, 216);
     padding: 2rem;
+   
 }
 #user-subject, #user-name{
     width: 100%;
     height: 40px;
+    border: none;
+    padding: 1rem;
 }
 #send-message{
     padding: 1rem;
     background-color: #e6bd43;
     font-weight: bold;
-    margin: 1rem;
+  
     text-decoration: none;
     color: #000;
 }
 #user-contact textarea{
     height: 140px;
     width: 100%;
+    border: none;
+    margin-bottom: 1.5rem;
 }
 .gap1{
     margin: 0.5rem;
@@ -268,6 +291,7 @@ iframe{
 #contact-information{
     background-color: rgb(216, 216, 216);
     padding: 2rem;
+    padding-right: 8rem;
 }
 
 .location{
@@ -537,6 +561,7 @@ footer {
 
     #user-contact{
         grid-area: skjema;
+        padding-left: 8rem;
     }
 
     #about-section-3{
