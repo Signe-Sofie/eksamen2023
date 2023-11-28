@@ -4,6 +4,24 @@
     font-family: 'Lato', sans-serif;
     max-width: 1600px;
 }
+.skip{
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+a.skip:active,
+a.skip:focus,
+a.skip:hover{
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
 
 
 
@@ -581,29 +599,8 @@ footer {
 
     #about-main{
         display: grid;
-        grid-template-areas:"about-company about-company" "overskrift overskrift" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
+        grid-template-areas:" . about-company" "overskrift overskrift" "our-services our-services"  "clients clients" "contact contact" "skjema tekst-info" "map map";
         grid-area: main;
-    }
-
-    #contact-information{
-        grid-area: tekst-info;
-    }
-
-    #contact-us{
-        grid-area: contact;
-        text-align: center;
-        background-color: lightgrey;
-        margin-bottom: 0;
-        padding-top: 3rem;
-    }
-
-    #user-contact{
-        grid-area: skjema;
-        padding-left: 8rem;
-    }
-
-    #about-section-3{
-        grid-area: clients;
     }
 
     #about-section-1{
@@ -625,12 +622,30 @@ footer {
         justify-content: center;
     }
 
+    #about-section-3{
+        grid-area: clients;
+    }
+
+    #contact-us{
+        grid-area: contact;
+        text-align: center;
+        background-color: lightgrey;
+        margin-bottom: 0;
+        padding-top: 3rem;
+    }
+
+    #user-contact{
+        grid-area: skjema;
+        padding-left: 8rem;
+    }
+
+    #contact-information{
+        grid-area: tekst-info;
+    }
+
     #map{
         grid-area: map;
     }
-
-
-
 
 
 
