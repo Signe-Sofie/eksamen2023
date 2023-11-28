@@ -104,10 +104,7 @@ header nav{
 }
 
 
-header div{
-    background-image: url("");
-    padding: 2rem;
-}
+
 #content h1{
     font-size: xxx-large;
     font-weight: bolder;
@@ -146,7 +143,6 @@ header div{
 
 #index-section-3{
     text-align: center;
-    
     margin-top: 2rem;
 }
 
@@ -207,11 +203,11 @@ header div{
     background-image: url("");
 }
 
-.button-link {
+.button-link { /*chatgpt har hjulpet her*/
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255); /* Your desired button color */
-    color: #000000; /* Text color */
+    background-color: rgb(255, 255, 255); 
+    color: #000000; 
     text-decoration: none;
     font-size: 15px;
     border-width: 2px;
@@ -390,15 +386,16 @@ footer {
 
 
 
-
+/*noe av bakgrunnsbildekoden som jeg ikke fikk til å fungere*/
+/*hentet fra W#school, boka "html og css", og chatgpt, for at jeg så har prøvd selv*/ 
 
 .background-container {
-    width: 100vw; /* 100% of the viewport width */
-    height: 350px; /* 100% of the viewport height */
-    background-image: url(""); /* Replace with the path to your image */
-    background-size: cover; /* Cover the entire container with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+    width: 100vw;
+    height: 350px; 
+    background-image: url("");
+    background-size: cover; /
+    background-position: center; 
+    background-repeat: no-repeat; 
     position: relative;
     background-color: lightgray;
     width: 100%;
@@ -435,8 +432,17 @@ footer {
 #content{
     position:relative;
     text-align: center;
-
 }
+
+header div{
+    background-image: url("");
+    padding: 2rem;
+}
+#Portifolio {
+    text-align: center;
+    background-image: url("");
+}
+
 
 
 
@@ -471,6 +477,7 @@ footer {
         margin: auto 15px;
         align-items: center;
         justify-content: space-between;
+        width: 50%;
     }
 
     #header-meny{
@@ -483,12 +490,7 @@ footer {
         padding-bottom: 0;
     }
 /*index*/
-   
-
-    #Compeling-headline{
-        grid-area: headline;
-    }
-
+    
     #Compeling-headline p{
         margin-left: 4rem;
         margin-right: 4rem;
@@ -499,10 +501,7 @@ footer {
     .read-more-about-our-services{
         width:fit-content;
     }
-
-    #index-section-1{
-        grid-area: subheading;
-    }
+    
     #index-section-1 br{
         display: none;
     }
@@ -516,12 +515,10 @@ footer {
         display: -webkit-box;
     }
     #index-section-2-img{
-        grid-area: bilde;
         margin-right: 2rem;
     }
 
     #index-section-2-tekst{
-        grid-area: company-tekst;
         width: 50%;
         margin-top: 2rem;
     }
@@ -532,16 +529,11 @@ footer {
         margin-top: 5rem;
     }
     #index-section-3{
-        grid-area: our-services;
         display: flex;
         flex-wrap: wrap;
         margin: 3rem;
         gap: 4rem;
         justify-content: center;
-    }
-
-    #index-section-4{
-        grid-area: newsletter;
     }
 
 
@@ -663,11 +655,13 @@ footer {
 
     #name-footer{
         grid-area: center;
+        padding: inherit;
     }
 
     #ikon-footer{
         grid-area: right;
-        
+        padding-top: inherit;
+        margin-top: 1.5rem;
     }
 
 }
