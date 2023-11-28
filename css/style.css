@@ -224,19 +224,6 @@ header nav{
     min-width: 200px;
 }
 
-.branding-article:hover{
-    transform:scale(115%);
-    transition: transform 3s ease;
-}
-.design-article:hover{
-    transform:scale(115%);
-    transition: transform 3s ease;
-}
-.development-article:hover{
-    transform:scale(115%);
-    transition: transform 3s ease;
-}
-
 
 
 .explore-jobs{
@@ -282,8 +269,6 @@ iframe{
     margin-bottom: 3rem;
 }
 
-
-
 #about-section-3{
     background-color: #e6bd43;
     text-align: center;
@@ -293,10 +278,12 @@ iframe{
 #about-section-3 img{
     margin: 0.5rem;
 }
-
+#our-services-overskrift-about{
+    text-align: center;
+}
 #contact-us{
     text-align: center;
-    background-color: lightgrey;
+    background-color:  rgb(216, 216, 216);
     margin-bottom: 0;
     padding-top: 3rem;
 }
@@ -540,6 +527,20 @@ header div{
 /*products*/
 
 
+.branding-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
+}
+.design-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
+}
+.development-article:hover{
+    transform:scale(115%);
+    transition: transform 3s ease;
+}
+
+
 #products-section-branding{
     display: flex;
     flex-wrap: wrap;
@@ -640,8 +641,6 @@ header div{
     }
 
 
-
-
 /*footer*/
     #footer{
         display: grid;
@@ -663,6 +662,6 @@ header div{
         padding-top: inherit;
         margin-top: 1.5rem;
     }
-    
+
 
 }
